@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Choco</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto px-2 sm:px-4">
+        <div class="class-container sm:ml-15 sm:mr-15 ml-2 mr-2">
+            <!-- header - content  -->
+
+            <div class="header-home bg-black text-white flex flex-col justify-start  sm:flex-row sm:justify-between sm:items-center sm:p-8 p-4 sm:rounded-b-lg overflow-hidden">
+                <div class="header-title font-bold text-2xl">Foodie <span class="text-orange-500">Choco</span></div>
+                <button class="sm:hidden text-white text-3xl justify-start" onclick="toggleMenu()">
+                    ☰
+                </button>
+           
+            <div id="navLinks" class="nav-links flex-col gap-x-3 sm:flex sm:flex-row sm:gap-x-10 gap-y-4 mt-4 sm:mt-0 hidden sm:flex">
+                <a href="#menu"
+                    class="nav-link no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Menu</a>
+                <a href="#offers"
+                    class="nav-link no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Offers</a>
+                <a href="#foods"
+                    class="nav-link no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Foods</a>
+                <a href="#services"
+                    class="nav-link no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Services</a>
+                <a href="#restaurants"
+                    class="no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Resturants</a>
+            </div>
+            <div class="header-buttons flex flex-row justify-start sm:justify-between items-center ">
+                <span><i class="bx bxs-user-circle text-3xl p-2"></i></span>
+                <span
+                    class="text-center no-underline hover:underline focus:underline active:underline underline-offset-4 decoration-orange-500">Choco</span>
+            </div>
+        </div>
+         </div>
+
+        <!-- header - content end -->
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="main-content-items flex flex-col lg:flex-row overflow-x-auto gap-y-10 lg:gap-x-20 mt-10 sm:mt-20 ml-1 sm:ml-5 p-2 sm:p-4">
+                <div class="main-content-text p-2 sm:p-3 flex-1 min-w-[300px]">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Fastest</h1>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-orange-500">Delivery &</h1>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Easy<span
+                            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-orange-500 pl-2 sm:pl-3">Pickup</span></h1>
+                    <div class="main-content-user mt-6 sm:mt-10 flex flex-row gap-x-2 sm:gap-x-4 font-bold justify-center items-center">
+                        <span><i class='bx bx-user-circle text-3xl sm:text-5xl'></i></span>
+                        <span class="flex flex-col text-sm sm:text-base">
+                            <span>When you are too lazy to cook,</span>
+                            <span>we are just a click away !</span>
+                        </span>
+                    </div>
+                    <div class="main-content-buttons flex flex-col sm:flex-row gap-y-4 sm:gap-x-7 mt-6 sm:mt-10">
+                        <div
+                            class="main-content-location flex flex-row gap-x-2 sm:gap-x-4 justify-center items-center bg-green-700 text-white p-2 sm:p-3 rounded-full shadow-lg transition duration-200 hover:bg-white hover:text-green-700 outline outline-1 outline-green-700 cursor-pointer">
+                            <span><i class='bx bx-search text-xl sm:text-2xl'></i></span>
+                            <span>Find Restaurants</span>
+                        </div>
+                        <div dir="ltr"
+                            class="main-content-play group flex flex-row gap-x-2 sm:gap-x-4 justify-center items-center cursor-pointer transition-transform duration-500 hover:scale-105">
+                            <div
+                                class="relative w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white shadow-md transition-transform duration-500 group-hover:rotate-180">
+                                <div
+                                    class="absolute inset-0 rounded-full border-4 border-r-white border-b-white border-t-white border-l-orange-500 transition-transform duration-500 group-hover:rotate-180">
+                                </div>
+                                <div class="relative flex items-center justify-center w-full h-full">
+                                    <i
+                                        class='bx bx-play text-xl sm:text-2xl text-orange-600 transition duration-300 group-hover:text-orange-700'></i>
+                                </div>
+                            </div>
+                            <span
+                                class="font-bold text-gray-800 transition duration-300 group-hover:text-orange-500 text-sm sm:text-base">How
+                                to Order</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="main-content-image flex justify-center items-center flex-1 min-w-[200px]">
+                    <div class="main-content-background -m-10 sm:-m-20">
+                        <img class="h-60 w-auto sm:h-80 md:h-100 md:w-full object-contain" src="images/—Pngtree—hamburger fast food_13355663.png"
+                            alt="girl eating">
+                    </div>
+                </div>
+
+                <div class="main-content-options flex flex-col justify-center align-center sm:p-6 flex-1 min-w-[200px]">
+                    <div class="main-content-logo flex flex-row justify-center align-center p-5 gap-x-2 sm:p-8"><i
+                            class='bx bxs-plane-alt text-3xl sm:text-5xl border-0 p-2 rounded-full shadow-lg'></i>
+                        <span class="flex flex-col pl-2 sm:pl-5">
+                            <span class="text-lg sm:text-2xl font-bold">Fast Delivery</span>
+                            <span class="text-xs sm:text-base">Promise to deliver within 30 mins</span>
+                        </span>
+                    </div>
+                    <div class="main-content-logo flex flex-row justify-center align-center p-5 gap-x-2 sm:p-8"><i
+                            class='bx bxs-shopping-bag text-3xl sm:text-5xl border-0 p-2 rounded-full shadow-lg'></i>
+                        <span class="flex flex-col pl-2 sm:pl-5">
+                            <span class="text-lg sm:text-2xl font-bold">Pick up</span>
+                            <span class="text-xs sm:text-base">Pickup delivery at your doorsteps</span>
+                        </span>
+                    </div>
+                    <div class="main-content-logo flex flex-row justify-center align-center p-5 gap-x-2 sm:p-8"><i
+                            class='bx bxs-bowl-hot text-3xl sm:text-5xl border-0 p-2 rounded-full shadow-lg'></i>
+                        <span class="flex flex-col pl-2 sm:pl-5">
+                            <span class="text-lg sm:text-2xl font-bold">Dine In</span>
+                            <span class="text-xs sm:text-base">Enjoy your food fresh crispy and hot</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content end  -->
+
+        <!-- best categories recipes start -->
+
+        <div class="items-box mt-10 sm:mt-30 mb-5 sm:mb-10">
+            <div class="items-box-content">
+                <div class="items-box-text flex flex-col md:flex-row justify-center items-center gap-y-2 gap-x-1 text-center md:text-left">
+                    <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold">Our <span class="text-orange-600">Best Delivered</span>
+                        Categories</h1>
+                    <p class="text-base sm:text-lg md:text-1xl pr-0 md:pr-30">It's not just about bringing you good food from Restaurants, we
+                        deliver you experience.</p>
+                </div>
+                <div class="items-box-items flex flex-col md:flex-row gap-y-5 md:gap-x-10 lg:gap-x-15 mt-5 md:mt-10 items-center justify-center">
+                    <div class="box-items-1 flex flex-col items-center">
+                        <img class="h-32 w-32 sm:h-40 sm:w-40 md:h-100 md:w-100 object-contain"
+                            src="images/vecteezy_grilled-chicken-breasts-rosemary-garnish-delicious-meal_58261462.png"
+                            alt="Chicken breast">
+                        <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                            <span class="text-lg sm:text-2xl font-bold">Chicken Breast</span>
+                            <span
+                                class="flex items-center justify-center text-orange-500 gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-sm sm:text-base">Order
+                                now <i class='bx bx-chevron-right flex justify-center align-center'></i></span>
+                        </div>
+                    </div>
+                    <div class="box-items-1 flex flex-col items-center">
+                        <img class="h-32 w-32 sm:h-40 sm:w-40 md:h-100 md:w-100 object-contain"
+                            src="images/vecteezy_grilled-chicken-wings-on-a-wooden-board-with-vegetables-and_55455001.png"
+                            alt="WIngs">
+                        <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                            <span class="text-lg sm:text-2xl font-bold">Wings</span>
+                            <span
+                                class="flex items-center justify-center text-orange-500 gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-sm sm:text-base">Order
+                                now <i class='bx bx-chevron-right align-center flex justify-center'></i></span>
+                        </div>
+                    </div>
+                    <div class="box-items-1 flex flex-col items-center">
+                        <img class="h-32 w-32 sm:h-40 sm:w-40 md:h-100 md:w-100 object-contain"
+                            src="images/vecteezy_crispy-french-fries-with-ketchup-on-a-white-plate_52969698.png"
+                            alt="fries">
+                        <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                            <span class="text-lg sm:text-2xl font-bold">French Fries</span>
+                            <span
+                                class="flex items-center justify-center text-orange-500 gap-1 transition delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-sm sm:text-base">Order
+                                now <i class='bx bx-chevron-right align-center flex justify-center'></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of items  -->
+
+        <!-- start of texture  -->
+
+        <div class="delivery-content">
+            <div class="delivery-content-items mt-10 sm:mt-20 mb-20 sm:mb-20">
+                <div class="delivery-content-background bg-cover bg-center h-60 sm:h-130 border-0"
+                    style="background-image: url(/images/black\ texture.jpg);">
+                    <div class="delivery-content-item">
+                        <div
+                            class="delivery-content-text flex flex-col justify-start items-center text-center p-5 sm:p-13 gap-y-2 sm:gap-y-3">
+                            <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-white">Fastest Food<span
+                                    class="text-orange-600"> Delivery</span> in town</h1>
+                            <span class="text-base sm:text-1xl text-white">Get your dream order fresh, steam hot at 20min break
+                                time.</span>
+                        </div>
+                        <div class="delivery-content-image flex flex-col md:flex-row text-white justify-center gap-y-5 md:gap-x-10 mt-2 sm:mt-5 items-center">
+                            <img class="h-32 w-32 sm:h-80 sm:w-80 object-contain" src="/images/—Pngtree—hamburger fast food_13355663.png" alt="burger">
+                            <div class="delivery-content-buttons flex flex-col invisible sm:visible md:">
+                                <div class="main-content-logo flex flex-row p-2 sm:p-8"><i
+                                        class='bx bxs-bowl-hot text-3xl sm:text-5xl border-0 p-2 rounded-full shadow-lg'></i>
+                                    <span class="flex flex-col pl-2 sm:pl-5">
+                                        <span class="text-lg sm:text-2xl font-bold">Air Delivery</span>
+                                        <span class="text-xs sm:text-base">Fast and light speed delivery service</span>
+                                    </span>
+                                </div>
+                                <div class="main-content-logo flex flex-row p-2 sm:p-8"><i
+                                        class='bx bxs-bowl-hot text-3xl sm:text-5xl border-0 p-2 rounded-full shadow-lg'></i>
+                                    <span class="flex flex-col pl-2 sm:pl-5">
+                                        <span class="text-lg sm:text-2xl font-bold">Spicy food</span>
+                                        <span class="text-xs sm:text-base">Hot and Delicious food which never be faded</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of texture  -->
+
+        <div class="serve-container mt-10 sm:mt-30 mb-10 sm:mb-30">
+            <div class="server-items flex flex-col justify-center items-center mt-10 sm:mt-20 mb-10 sm:mb-20 gap-y-8 sm:gap-y-17">
+                <div class="serve-text text-3xl sm:text-6xl font-bold text-center">How we <span class="text-orange-600">Serve</span> you</div>
+                <div class="serve-content flex flex-col md:flex-row">
+                    <div class="serve-content-item flex flex-col md:flex-row gap-y-5 md:gap-x-10 lg:gap-x-15 mt-5 md:mt-10 justify-center align-center items-center">
+                        <div class="box-items-1 align-center justify-center flex flex-col items-center">
+                            <img class="h-32 w-32 sm:h-60 sm:w-60 ml-0 sm:ml-15 object-contain" src="images/parcel.png" alt="Chicken breast">
+                            <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                                <span class="text-lg sm:text-2xl font-bold">Automated Packaging</span>
+                                <span class="text-xs sm:text-1xl">100% environment friendly packaging for customers</span>
+                            </div>
+                        </div>
+                        <div class="box-items-1 flex flex-col items-center">
+                            <img class="h-32 w-32 sm:h-60 sm:w-60 object-contain" src="images/gift.png" alt="Chicken breast">
+                            <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                                <span class="text-lg sm:text-2xl font-bold">Packed with Love</span>
+                                <span class="text-xs sm:text-1xl"> We deliver the best experience around the world</span>
+                            </div>
+                        </div>
+                        <div class="box-items-1 flex flex-col items-center">
+                            <img class="h-32 w-32 sm:h-60 sm:w-60 object-contain" src="images/popcorn.png" alt="Chicken breast">
+                            <div class="box-items-text flex flex-col justify-center align-center gap-y-1 sm:gap-y-3 text-center">
+                                <span class="text-lg sm:text-2xl font-bold">Serve hot Appetite</span>
+                                <span class="text-xs sm:text-1xl">Promises to deliver within 30 mins to your locations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of Services -->
+
+        <div class="footer-container">
+            <div class="footer-background bg-cover bg-center h-60 sm:h-130 border-0 backdrop-brightness-900 backdrop-contrast-400 relative"
+                style="background-image: url(/images/green_texture.jpg);">
+                <div class="footer-text text-white flex flex-col justify-center items-center p-5 sm:p-13 gap-y-5 sm:gap-y-10">
+                    <span class="text-2xl sm:text-5xl font-bold text-center">Enjoy <span class="text-black">3000+</span>foods from<span
+                            class="text-yellow-500"> 400</span> Restaurants</span>
+                    <button
+                        class="bg-black text-white border-0 rounded-full p-2 sm:p-3 hover:bg-white hover:text-black hover:border-2 border-black-600">Order
+                        now <i class='bx bx-chevron-right flex justify-center align-center'></i> </button>
+                </div>
+                <div class="footer absolute bottom-0 w-full rounded-t-lg ml-auto mr-auto">
+                    <div
+                        class="footer-text flex flex-col sm:flex-row w-full justify-between items-center p-5 sm:p-10 bg-black text-white rounded-t-lg gap-y-2 sm:gap-y-0">
+                        <span class="text-lg sm:text-2xl font-bold">Foodie <span class="text-orange-600">Choco</span></span>
+                        <span class="text-sm sm:text-1xl">© 2023 Foodie Choco. All rights reserved.</span>
+                        <div class="footer-icons flex flex-row gap-x-4 sm:gap-x-7 mt-2 sm:mt-5">
+                            <i class='bx bxl-facebook text-xl sm:text-2xl hover:text-orange-600'></i>
+                            <i class='bx bxl-instagram text-xl sm:text-2xl hover:text-orange-600'></i>
+                            <i class='bx bxl-twitter text-xl sm:text-2xl hover:text-orange-600'></i>
+                            <i class='bx bxl-linkedin text-xl sm:text-2xl hover:text-orange-600'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    </div>
+    <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+
+</html>
